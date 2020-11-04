@@ -1,82 +1,215 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body { background:black;
 }
 
-.fullbleed{
-  border: 6px orange solid;
-width: 100vw;
-margin: 0;
-margin-left: 50%;
-transform: translateX(-50%);}
-
-.fullbleed img{
-  width: 100%;
-}
-
-div{
-background: orange;
-max-width:840px;
-margin:0 auto;
-padding : 130px;}
-
-header{
+.head{
   background: yellow;
-  min-height: 15vh;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+height: 200px;
+text-align: center;
+background-position: center;
 }
-
-.navigation{
-  display: flex;
-}
-
-h1{
-font-size: 100px;
-color: black;
+.head h1 {
+  font-size: 4em;
 }
 
 
-
-
-.photo {height:800px;
-  width: 1100px;
-  display: block;
-  margin-left: auto;
-  margin-right:auto;
+.button{
+  background: black;
+  color: white;
+  font-family:'Open Sans';sans-serif;
+  font-size: 1,5em;
+  padding: 1em;
+  text-decoration: none;
+  border-radius: 1em;
+  transition: all 0,5s ease-out;
 }
 
+.button:hover{
+  background: orange;
+  border-radius: 35%;
+  top: 32px;
+  left: 32px;
+}
+
+.image img{
+height:auto;
+width:100%;
+}
+
+.text-content{
+background: orange;
+height:1100px;}
 
 .text-content h1 {
   color: white;
 text-align: center;
+font-size: 4em;
+position: relative;
+top: 60px;
 }
 
-#main-menu ul{
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
+.text-content p{
+  margin-left: 300px;
+  margin-right: 300px;
+  position: relative;
+  top: 60px;
+  font-size: 2em;
 }
 
-#main-menu li{
-  flex-basis: 8em;
-  border-left: 1px solid #000;
+.text-content img{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  left: 250px;
+
 }
-.fade {
-opacity: 0,5;
-}
-.fade : hover{
-opacity: 1;
-}
-
-
-.color {
-  background: rgba(200,150,0, 0.5);
+.photo2{margin-left:100px;
+  margin-right:100px;
+  height: 500px;
+  width: 600px;
+  position: relative;
+  top: 60px;
 }
 
+.vidz video{
+width:100%;
+
+}
 
 
-.color : hover {
-  background: rgba(255,150, 20, 0.5);
+/* Noir et blanc */
+.grayscale div img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.grayscale div:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.text-content1{
+background:yellow;
+height:2000px;}
+
+.text-content1 h1 {
+  color: white;
+text-align: center;
+font-size: 4em;
+position: relative;
+top: 60px;
+}
+
+.text-content1 p{
+  margin-left: 300px;
+  margin-right: 300px;
+  position: relative;
+  top: 60px;
+  font-size: 2em;
+}
+
+.text-content1 img{
+  width: 500px;
+  height:350px;
+  position: relative;
+  top:50px;left: 400px;
+
+}
+/* Image ronde */
+.rounded div img {
+  width: 500px; /* largeur de l'image */
+  height: 350px; /* hauteur de l'image */
+  -webkit-transition: .3s ease-in-out !important;
+  transition: .3s ease-in-out !important;
+}
+.rounded div:hover img:hover {
+  width: 300px; /* on affiche l'image au carré */
+  height: 300px;
+  border-radius: 50%;
+}
+
+
+footer{
+  background-color: white;
+  height: 100px;
+  text-align: center;
+  font-family: sans-serif;
+ text-decoration: none;}
+ ul{
+  position: relative;
+  top:50px;
+}
+
+.step2 img {
+width:100%;
+height: auto;
+}
+.texte{ position: absolute;
+  top:150px;
+height: 600px;
+margin-left: 100px;
+margin-right: 100px;
+  background-color: white;
+  opacity: 0.3;
+  transition: opacity .3s;}
+
+
+
+.texte:hover {
+    opacity: 1;
+}
+
+
+.texte h1 {
+  color: yellow;
+text-align: center;
+font-size: 4em;
+position: relative;
+top: 60px;
+}
+
+.texte p{
+  margin-left: 300px;
+  margin-right: 300px;
+  position: relative;
+  top: 60px;
+  font-size: 2em;
+}
+
+
+
+.text-content3{
+background: green;
+height:700px;
+transition: opacity 0.25s ease-out;}
+
+.text-content3:hover {
+opacity: 0;
+}
+
+
+.text-content3 h1 {
+  color: white;
+text-align: center;
+font-size: 4em;
+position: relative;
+top: 60px;
+}
+
+.text-content3 p{
+  margin-left: 300px;
+  margin-right: 300px;
+  position: relative;
+  top: 60px;
+  font-size: 2em;
+}
+
+.text-content3 img{
+  width: 500px;
+  height:350px;
+  position: relative;
+  top:50px;left: 400px;
+
 }
